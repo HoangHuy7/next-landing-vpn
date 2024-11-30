@@ -3,7 +3,8 @@ import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import LogoVPN from "../../public/assets/Logo.svg";
+import LogoVPN from "../../public/assets/LOGO FDIF.png";
+import Image from "next/image";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -23,17 +24,25 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <LogoVPN className="h-8 w-auto" />
+            <div style={{width: "120px", height: "50px", overflow: "hidden"}}>
+              <Image
+                  src={LogoVPN}
+                  alt="Logo"
+                  width={120}         // Chiều rộng
+                  height={50}         // Chiều cao
+                  style={{objectFit: "cover"}} // Tùy chỉnh để hình ảnh không bị méo
+              />
+            </div>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                onSetActive={() => {
+                  setActiveLink("about");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +

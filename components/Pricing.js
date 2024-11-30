@@ -191,15 +191,20 @@ const Pricing = () => {
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
-            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}> 
-              <Maps className="w-full h-auto" />
+            <motion.div className="py-12 w-full px-8 mt-16" variants={scrollAnimation}>
+              {/*<Maps className="w-full h-auto" />*/}
+              <iframe width="100%" height="500px" src="https://www.youtube.com/embed/G30O7LM-LPU?si=UPSUjjSQ3WcV_M4z"
+                      title="YouTube video player" frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </motion.div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper>
-            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap" variants={scrollAnimation}>
+            <motion.div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"
+                        variants={scrollAnimation}>
               {/* <Netflix className="h-18 w-auto" /> */}
               <img
-                src="/assets/Icon/amazon.png"
+                  src="/assets/Icon/amazon.png"
                 className="h-14 w-auto mt-4 lg:mt-2"
                 alt=""
               />

@@ -47,8 +47,8 @@ const Hero = ({
             </div>
             <div className="flex w-full">
               <motion.div className="h-full w-full" variants={scrollAnimation}>
-                <Image
-                  src="/assets/Illustration1.png"
+                <img
+                  src="https://fdifinance.vn/wp-content/uploads/2024/02/3U0A4524-1-scaled.jpg"
                   alt="VPN Illustrasi"
                   quality={100}
                   width={612}
