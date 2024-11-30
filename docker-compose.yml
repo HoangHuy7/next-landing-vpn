@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   nextjs:
+    container_name: next-landing-vpn-nextjs
     build:
       context: .
       dockerfile: Dockerfile
