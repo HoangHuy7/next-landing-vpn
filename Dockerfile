@@ -21,7 +21,7 @@ FROM node:18-alpine AS runner
 
 # Set environment variables
 ENV NODE_ENV production
-ENV PORT 3000
+ENV PORT 4400
 
 # Set the working directory
 WORKDIR /app
